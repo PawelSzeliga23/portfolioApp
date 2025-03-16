@@ -15,9 +15,9 @@ This is a portfolio application to showcase my projects, skills, and experience.
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript
+- TypeScript
 - React
-- Node.js
+- Vite
 
 ## Installation
 1. Clone the repository:
@@ -34,7 +34,7 @@ This is a portfolio application to showcase my projects, skills, and experience.
   ```
 4. Start the development server:
   ```bash
-  npm start
+  npm run dev
   ```
 
 ## Usage
