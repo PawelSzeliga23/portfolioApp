@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Pacman Game",
+        "shortDesc": "A classic Pacman game implementation using Java.",
+        "github1": "https://github.com/PawelSzeliga23/ProjektGUI2_pacman_game",
+        "github2": "",
+        "images": [
+            "/assets/projects/pacman1.png",
+            "/assets/projects/pacman2.png"
+        ],
+        "technologies": [
+            "java"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Polish Summits Library",
+        "shortDesc": "A library for managing information about Polish summits.",
+        "github1": "https://github.com/PawelSzeliga23/TIN_projekt_frontend",
+        "github2": "https://github.com/PawelSzeliga23/TIN_project_backend",
+        "images": [
+            "/src/assets/projects/summitLib1.png",
+            "/src/assets/projects/summitLib2.png"
+        ],
+        "technologies": [
+            "react",
+            "dotnetcore",
+            "microsoftsqlserver"
+        ]
+    }
+]
