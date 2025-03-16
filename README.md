@@ -38,10 +38,10 @@ This is a portfolio application to showcase my projects, skills, and experience.
   ```
 
 ## Usage
-Open your browser and navigate to `http://localhost:3000` to view the portfolio app.
+Open your browser and navigate to `http://localhost:5173` to view the portfolio app.
 
 ## License
 This project is licensed under the MIT License.
 
 ## Contact
-You can reach me at [your-email@example.com](mailto:your-email@example.com).
+You can reach me at [paweszeliga@gmail.com].
