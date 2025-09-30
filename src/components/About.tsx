@@ -46,9 +46,9 @@ const About: React.FC = () => {
                         {activeSection === 'Skills' && (
                             <div>
                                 <p>
-                                I've listed most of my programming skills on the home page and here too.
-                                <br /><br />
-                                Also:
+                                    I've listed most of my programming skills on the home page and here too.
+                                    <br /><br />
+                                    Also:
                                 </p>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>OOP principles, design patterns, testing, Git</li>
@@ -116,8 +116,8 @@ const About: React.FC = () => {
                                         dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
                                         dragElastic={0.5}
                                         whileHover={{ scale: 1.15, transition: { duration: 0.15 } }}
-                                        whileTap={{ scale: 0.9 ,cursor: "grabbing" , transition: { duration: 0.05 }}}
-                                        whileDrag={{ cursor: "grabbing" , rotate: 5 , transition: { duration: 0.05 }}}
+                                        whileTap={{ scale: 0.9, cursor: "grabbing", transition: { duration: 0.05 } }}
+                                        whileDrag={{ cursor: "grabbing", rotate: 5, transition: { duration: 0.05 } }}
                                         initial={{ x: 100, opacity: 0 }}
                                         animate={{ x: 0, opacity: 1 }}
                                         transition={{ duration: 0.4, delay: idx * 0.07, ease: "easeInOut" }}

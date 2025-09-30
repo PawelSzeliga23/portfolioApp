@@ -2,11 +2,17 @@
     {
         "id": 1,
         "title": "Portfolio",
-        "shortDesc": "This is a portfolio application to showcase my projects, skills, and experience. It is designed to provide a comprehensive overview of my professional background and achievements.",
+        "shortDesc": "This is a portfolio application to showcase my projects, skills, and experience. It is designed to provide a overview of my professional background and achievements.",
         "github1": "https://github.com/PawelSzeliga23/portfolioApp",
         "github2": "",
-        "images": [],
-        "technologies": ["react","TypeScript"]
+        "images": [
+            "/src/assets/projects/portfolio1.png"
+        ],
+        "technologies": [
+            "react",
+            "TypeScript",
+            "tailwindcss"
+        ]
     },
     {
         "id": 2,
@@ -15,8 +21,11 @@
         "github1": "https://github.com/PawelSzeliga23/pygame",
         "github2": "",
         "images": [
+            "/src/assets/projects/mazegame1.png"
         ],
-        "technologies": ["Python"]
+        "technologies": [
+            "Python"
+        ]
     },
     {
         "id": 3,
@@ -25,7 +34,11 @@
         "github1": "https://github.com/PawelSzeliga23/fishSite",
         "github2": "",
         "images": [],
-        "technologies": ["JavaScript"]
+        "technologies": [
+            "react",
+            "JavaScript",
+            "html5"
+        ]
     },
     {
         "id": 4,
@@ -34,7 +47,9 @@
         "github1": "https://github.com/PawelSzeliga23/Game_project",
         "github2": "",
         "images": [],
-        "technologies": []
+        "technologies": [
+            "unrealengine"
+        ]
     },
     {
         "id": 5,
@@ -43,7 +58,9 @@
         "github1": "https://github.com/PawelSzeliga23/MultiLayerNN",
         "github2": "",
         "images": [],
-        "technologies": ["Python"]
+        "technologies": [
+            "Python"
+        ]
     },
     {
         "id": 6,
@@ -52,8 +69,11 @@
         "github1": "https://github.com/PawelSzeliga23/TIN_project_backend",
         "github2": "",
         "images": [],
-        "technologies": ["csharp","dotnetcore",
-            "microsoftsqlserver"]
+        "technologies": [
+            "csharp",
+            "dotnetcore",
+            "microsoftsqlserver"
+        ]
     },
     {
         "id": 7,
@@ -62,17 +82,18 @@
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI_train_simulator",
         "github2": "",
         "images": [],
-        "technologies": ["Java"]
+        "technologies": [
+            "Java"
+        ]
     },
-     {
+    {
         "id": 8,
         "title": "Pacman Game",
         "shortDesc": "Implementation of the Pacman game in Java using Swing library. The game features classic Pacman mechanics, including maze navigation, pellet collection, and ghost avoidance.",
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI2_pacman_game",
         "github2": "",
         "images": [
-            "/assets/projects/pacman1.png",
-            "/assets/projects/pacman2.png"
+            "/src/assets/projects/pacman1.png"
         ],
         "technologies": [
             "java"
@@ -90,7 +111,9 @@
         ],
         "technologies": [
             "react",
-            "JavaScript"
+            "JavaScript",
+            "html5",
+            "css3"
         ]
     }
 ]

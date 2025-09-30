@@ -8,11 +8,11 @@ const Contact: React.FC = () => {
     const [disabled, setDisabled] = useState(false);
 
     useEffect(() => {
-    const lastSent = localStorage.getItem("lastSentTime");
-    if (lastSent) {
-    const diff = Date.now() - parseInt(lastSent);
-    if (diff < 30000) setDisabled(true); // blokada 30s
-     }
+        const lastSent = localStorage.getItem("lastSentTime");
+        if (lastSent) {
+            const diff = Date.now() - parseInt(lastSent);
+            if (diff < 30000) setDisabled(true); // blokada 30s
+        }
     }, []); // <- to zamyka useEffect, a nie if
 
 
@@ -22,32 +22,32 @@ const Contact: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-    setDisabled(true);
-    localStorage.setItem("lastSentTime", Date.now().toString());
-        
-    const now = new Date().toLocaleString();
-    emailjs.send(
-      "service_doyoiqa",      // Twój Service ID
-      "template_2137dle",     // Twój Template ID
-      {
-        user_name: form.name,
-        user_email: form.email,
-        message: form.message,
-        time: now,
-      },
-      "GeQ0S74U7QjTQZaWn"       // Publiczny klucz EmailJS
-    ).then(
-      (result) => {
-        console.log("Wysłano ✅", result.text);
-        setSubmitted(true);
-        setForm({ name: "", email: "", message: "" }); // czyszczenie formularza
-        setTimeout(() => setDisabled(false), 30000);
-      },
-      (error) => {
-        console.log("Błąd ❌", error.text);
-        setDisabled(false);
-      }
-    );
+        setDisabled(true);
+        localStorage.setItem("lastSentTime", Date.now().toString());
+
+        const now = new Date().toLocaleString();
+        emailjs.send(
+            "service_doyoiqa",      // Twój Service ID
+            "template_2137dle",     // Twój Template ID
+            {
+                user_name: form.name,
+                user_email: form.email,
+                message: form.message,
+                time: now,
+            },
+            "GeQ0S74U7QjTQZaWn"       // Publiczny klucz EmailJS
+        ).then(
+            (result) => {
+                console.log("Wysłano ✅", result.text);
+                setSubmitted(true);
+                setForm({ name: "", email: "", message: "" }); // czyszczenie formularza
+                setTimeout(() => setDisabled(false), 30000);
+            },
+            (error) => {
+                console.log("Błąd ❌", error.text);
+                setDisabled(false);
+            }
+        );
     };
 
     return (

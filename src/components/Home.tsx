@@ -10,7 +10,7 @@ const Home = () => {
                         <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'> Hi I'm</h1>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-lime-500'> Paweł Szeliga</h1>
                         <p className='text-base sm:text-lg md:text-xl mt-3 text-center sm:text-left'>
-                        I really enjoy computer science and am currently studying it while gaining experience through my personal and academic projects.
+                            I really enjoy computer science and am currently studying it while gaining experience through my personal and academic projects.
                         </p>
                     </div>
                     <div>
