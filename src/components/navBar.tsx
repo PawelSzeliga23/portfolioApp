@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
                 setShow(false);
             } else {
                 if (currentScroll == 0) {
-                setShow(true);
+                    setShow(true);
                 }
             }
             setLastScroll(currentScroll);
@@ -28,9 +28,8 @@ const NavBar: React.FC = () => {
 
     return (
         <nav
-            className={`flex items-center justify-center py-5 fixed top-0 w-full z-20 sm:bg-transparent bg-white transition-transform duration-100 ${
-                show ? 'translate-y-0' : '-translate-y-full'
-            }`}
+            className={`flex items-center justify-center py-5 fixed top-0 w-full z-20 sm:bg-transparent bg-white transition-transform duration-100 ${show ? 'translate-y-0' : '-translate-y-full'
+                }`}
             role="navigation"
         >
             {!isMobile && (
@@ -46,11 +45,10 @@ const NavBar: React.FC = () => {
                 <li>
                     <Link
                         to="/"
-                        className={`${
-                            location.pathname === '/'
+                        className={`${location.pathname === '/'
                                 ? 'text-lime-500 hover:text-lime-600 underline'
                                 : 'text-gray-700 hover:text-gray-900'
-                        }`}
+                            }`}
                     >
                         Home
                     </Link>
@@ -58,11 +56,10 @@ const NavBar: React.FC = () => {
                 <li>
                     <Link
                         to="/about"
-                        className={`${
-                            location.pathname === '/about'
+                        className={`${location.pathname === '/about'
                                 ? 'text-lime-500 hover:text-lime-600 underline'
                                 : 'text-gray-700 hover:text-gray-900'
-                        }`}
+                            }`}
                     >
                         About
                     </Link>
@@ -70,11 +67,10 @@ const NavBar: React.FC = () => {
                 <li>
                     <Link
                         to="/projects"
-                        className={`${
-                            location.pathname === '/projects'
+                        className={`${location.pathname === '/projects'
                                 ? 'text-lime-500 hover:text-lime-600 underline'
                                 : 'text-gray-700 hover:text-gray-900'
-                        }`}
+                            }`}
                     >
                         Projects
                     </Link>
@@ -82,11 +78,10 @@ const NavBar: React.FC = () => {
                 <li>
                     <Link
                         to="/contact"
-                        className={`${
-                            location.pathname === '/contact'
+                        className={`${location.pathname === '/contact'
                                 ? 'text-lime-500 hover:text-lime-600 underline'
                                 : 'text-gray-700 hover:text-gray-900'
-                        }`}
+                            }`}
                     >
                         Contact
                     </Link>

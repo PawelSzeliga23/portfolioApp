@@ -9,19 +9,19 @@ interface ProjectCardProps {
     technologies: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ id, title, shortDesc, githubLink, image, technologies }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({title, shortDesc, githubLink, image, technologies }) => {
     console.log(technologies);
     console.log(image);
     return (
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col justify-between">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 {image && (
-    <img 
-        className="rounded-t-lg w-full h-48 object-cover" 
-        src={image} 
-        alt="" 
-    />
-)}
+                    <img
+                        className="rounded-t-lg w-full h-48 object-cover"
+                        src={image}
+                        alt=""
+                    />
+                )}
             </a>
             <div className="p-5 flex flex-col flex-grow">
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
