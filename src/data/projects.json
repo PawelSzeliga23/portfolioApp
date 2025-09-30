@@ -1,8 +1,73 @@
 [
     {
         "id": 1,
+        "title": "Portfolio",
+        "shortDesc": "This is a portfolio application to showcase my projects, skills, and experience. It is designed to provide a comprehensive overview of my professional background and achievements.",
+        "github1": "https://github.com/PawelSzeliga23/portfolioApp",
+        "github2": "",
+        "images": [],
+        "technologies": ["react","TypeScript"]
+    },
+    {
+        "id": 2,
+        "title": "Maze Game",
+        "shortDesc": "Maze is a game created in Pygame, where the player moves through the maze, trying to reach the goal. The game is based on exploration mechanics.",
+        "github1": "https://github.com/PawelSzeliga23/pygame",
+        "github2": "",
+        "images": [
+        ],
+        "technologies": ["Python"]
+    },
+    {
+        "id": 3,
+        "title": "Fish Enthusiasts Social Platform - in progress...",
+        "shortDesc": "FishApp is a social platform for fishing enthusiasts. Connect with fellow anglers, share your fishing experiences, and get insights on the best fishing spots.",
+        "github1": "https://github.com/PawelSzeliga23/fishSite",
+        "github2": "",
+        "images": [],
+        "technologies": ["JavaScript"]
+    },
+    {
+        "id": 4,
+        "title": "Game project - in progress...",
+        "shortDesc": "Developed with Unreal Engine 5, this project is a isometric game that combines exploration, survival and combat elements. The game is set on a mysterious planet filled with dangerous creatures and challenging environments.",
+        "github1": "https://github.com/PawelSzeliga23/Game_project",
+        "github2": "",
+        "images": [],
+        "technologies": []
+    },
+    {
+        "id": 5,
+        "title": "MultiLayerNN",
+        "shortDesc": "This project implements a multilayer neural network (MLP) for classifying handwritten digits using the MNIST dataset. The model is implemented solely with the NumPy library, without using dedicated neural network libraries.",
+        "github1": "https://github.com/PawelSzeliga23/MultiLayerNN",
+        "github2": "",
+        "images": [],
+        "technologies": ["Python"]
+    },
+    {
+        "id": 6,
+        "title": "Polish Summits Library - backend",
+        "shortDesc": "Backend application created with ASP.NET Core framework, part of a semester project. The project aims to create a REST API for the Polish Mountain Peaks Library.",
+        "github1": "https://github.com/PawelSzeliga23/TIN_project_backend",
+        "github2": "",
+        "images": [],
+        "technologies": ["csharp","dotnetcore",
+            "microsoftsqlserver"]
+    },
+    {
+        "id": 7,
+        "title": "Train simulator",
+        "shortDesc": "A train simulator application developed in Java. It is console-based and allows users to simulate train operations, including managing routes, schedules, and train statuses.",
+        "github1": "https://github.com/PawelSzeliga23/ProjektGUI_train_simulator",
+        "github2": "",
+        "images": [],
+        "technologies": ["Java"]
+    },
+     {
+        "id": 8,
         "title": "Pacman Game",
-        "shortDesc": "A classic Pacman game implementation using Java.",
+        "shortDesc": "Implementation of the Pacman game in Java using Swing library. The game features classic Pacman mechanics, including maze navigation, pellet collection, and ghost avoidance.",
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI2_pacman_game",
         "github2": "",
         "images": [
@@ -14,8 +79,8 @@
         ]
     },
     {
-        "id": 2,
-        "title": "Polish Summits Library",
+        "id": 9,
+        "title": "Polish Summits Library - frontend",
         "shortDesc": "A library for managing information about Polish summits.",
         "github1": "https://github.com/PawelSzeliga23/TIN_projekt_frontend",
         "github2": "https://github.com/PawelSzeliga23/TIN_project_backend",
@@ -25,8 +90,7 @@
         ],
         "technologies": [
             "react",
-            "dotnetcore",
-            "microsoftsqlserver"
+            "JavaScript"
         ]
     }
 ]

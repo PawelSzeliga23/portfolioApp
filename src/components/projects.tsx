@@ -14,6 +14,7 @@ const Projects: React.FC = () => {
             id={project.id}
             title={project.title}
             shortDesc={project.shortDesc}
+            githubLink={project.github1}
             image={project.images[0]}
             technologies={project.technologies}
             />

@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./components/Home"
 import About from "./components/About"
 import FadeInComponent from "./components/FadeInComponent"
-import Project from "./components/Project"
 import Projects from "./components/projects"
+import Contact from "./components/contatct"
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/" element={<FadeInComponent ><Home></Home></FadeInComponent>} />
           <Route path="/about" element={<FadeInComponent ><About></About></FadeInComponent>} />
           <Route path="/projects" element={<FadeInComponent ><Projects /></FadeInComponent>} />
-          <Route path="/project/:id" element={<FadeInComponent><Project /></FadeInComponent>} />
+          <Route path="/contact" element={<FadeInComponent><Contact /></FadeInComponent>} />
         </Routes>
       </Router>
     </div>
