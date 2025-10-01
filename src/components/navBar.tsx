@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const NavBar: React.FC = () => {
     const location = useLocation();
@@ -28,11 +29,11 @@ const NavBar: React.FC = () => {
 
     return (
         <nav
-            className={`flex items-center justify-center py-5 fixed top-0 w-full z-20 sm:bg-transparent bg-white transition-transform duration-100 ${show ? 'translate-y-0' : '-translate-y-full'
+            className={`flex items-center justify-center py-5 fixed top-0 w-full z-20 sm:bg-transparent bg-transparent transition-transform duration-100 ${show ? 'translate-y-0' : '-translate-y-full'
                 }`}
             role="navigation"
         >
-            {!isMobile && (
+            {/* {!isMobile && (
                 <div className="absolute left-0 flex items-center opacity-0 sm:opacity-100">
                     <img
                         src="/src/assets/ps-high-resolution-logo.png"
@@ -40,14 +41,14 @@ const NavBar: React.FC = () => {
                         className="w-24 rounded-full"
                     />
                 </div>
-            )}
+            )} */}
             <ul className="flex space-x-10">
                 <li>
                     <Link
                         to="/"
                         className={`${location.pathname === '/'
-                                ? 'text-lime-500 hover:text-lime-600 underline'
-                                : 'text-gray-700 hover:text-gray-900'
+                            ? 'text-lime-500 hover:text-lime-600 underline dark:text-purple-500 dark:hover:text-purple-600'
+                            : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
                         Home
@@ -57,8 +58,8 @@ const NavBar: React.FC = () => {
                     <Link
                         to="/about"
                         className={`${location.pathname === '/about'
-                                ? 'text-lime-500 hover:text-lime-600 underline'
-                                : 'text-gray-700 hover:text-gray-900'
+                            ? 'text-lime-500 hover:text-lime-600 underline dark:text-purple-500 dark:hover:text-purple-600'
+                            : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
                         About
@@ -68,8 +69,8 @@ const NavBar: React.FC = () => {
                     <Link
                         to="/projects"
                         className={`${location.pathname === '/projects'
-                                ? 'text-lime-500 hover:text-lime-600 underline'
-                                : 'text-gray-700 hover:text-gray-900'
+                            ? 'text-lime-500 hover:text-lime-600 underline dark:text-purple-500 dark:hover:text-purple-600'
+                            : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
                         Projects
@@ -79,14 +80,15 @@ const NavBar: React.FC = () => {
                     <Link
                         to="/contact"
                         className={`${location.pathname === '/contact'
-                                ? 'text-lime-500 hover:text-lime-600 underline'
-                                : 'text-gray-700 hover:text-gray-900'
+                            ? 'text-lime-500 hover:text-lime-600 underline dark:text-purple-500 dark:hover:text-purple-600'
+                            : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
                         Contact
                     </Link>
                 </li>
             </ul>
+            <ThemeToggle />
         </nav>
     );
 };

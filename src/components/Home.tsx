@@ -8,9 +8,9 @@ const Home = () => {
                 <div className='flex flex-col items-center sm:items-start justify-center h-full'>
                     <div>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'> Hi I'm</h1>
-                        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-lime-500'> Paweł Szeliga</h1>
+                        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-lime-500 dark:text-purple-500'> Paweł Szeliga</h1>
                         <p className='text-base sm:text-lg md:text-xl mt-3 text-center sm:text-left'>
-                            I really enjoy computer science and am currently studying it while gaining experience through my personal and academic projects.
+                            Fullstack developer
                         </p>
                     </div>
                     <div>
@@ -34,7 +34,7 @@ const Home = () => {
                             <a
                                 href='/public/Paweł_Szeliga_CV.pdf'
                                 download={true}
-                                className='text-lg sm:text-lg text-lime-500 hover:text-lime-600 border-2 border-lime-500 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 align-center justify-center flex gap-1'
+                                className='text-lg sm:text-lg text-lime-500 hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 align-center justify-center flex gap-1 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
                             >
                                 Download CV
                                 <span className="material-symbols-outlined">
@@ -47,14 +47,14 @@ const Home = () => {
                                 href='https://www.linkedin.com/in/paweł-szeliga-954b23349'
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='devicon-linkedin-plain text-lg sm:text-xl font-bold text-lime-500 hover:text-lime-600 border-2 border-lime-500 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105'
+                                className='devicon-linkedin-plain text-lg sm:text-xl font-bold text-lime-500 hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
                             >
                             </a>
                             <a
                                 href='https://github.com/PawelSzeliga23'
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='devicon-github-original text-lg sm:text-xl font-bold text-lime-500 hover:text-lime-600 border-2 border-lime-500 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105'
+                                className='devicon-github-original text-lg sm:text-xl font-bold text-lime-500 hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
                             >
                             </a>
                         </div>
@@ -62,7 +62,7 @@ const Home = () => {
                 </div>
                 <div className="relative w-60 sm:w-60 md:w-80 lg:w-96">
                     <motion.div
-                        className="w-60 sm:w-60 md:w-80 lg:w-96 h-60 sm:h-60 md:h-80 lg:h-96 rounded-full border-4 border-dashed border-lime-500"
+                        className="w-60 sm:w-60 md:w-80 lg:w-96 h-60 sm:h-60 md:h-80 lg:h-96 rounded-full border-4 border-dashed border-lime-500 dark:border-purple-500"
                         animate={{ rotate: 360 }}
                         transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
                     />
