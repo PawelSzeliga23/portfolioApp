@@ -66,5 +66,9 @@
         "buttons": {
             "ReadMore": "Read more"
         }
+    },
+    "footer": {
+        "allRights": "All rights reserved",
+        "copyright": "© {{year}} Paweł Szeliga"
     }
 }
