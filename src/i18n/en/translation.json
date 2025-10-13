@@ -1,0 +1,62 @@
+{
+    "home": {
+        "greeting": "Hi I'm",
+        "skills_title": "Skills:",
+        "download_cv": "Download CV"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about": {
+        "sections": {
+            "Skills": "Skills",
+            "Experience": "Experience",
+            "Education": "Education",
+            "Interests": "Interests"
+        },
+        "interests": {
+            "Climbing": "Climbing",
+            "Hiking": "Hiking",
+            "Music": "Music"
+        },
+        "paragraphs": {
+            "Education1": "I am a seventh-semester student at the Polish-Japanese Academy of Information Technology, majoring in Computer Science.",
+            "Education2": "I began my studies in 2022 and have learned a lot over the past few years. The university has provided me with a solid foundation in software development, and I have many skill areas ready to be further developed through practical experience. During my studies, I completed several interesting courses and engaging projects, and I learned how to collaborate effectively in software design and development teams.",
+            "Experience1": "Although I do not have direct experience in commercial software development, over the past few years I have taken on various non-software roles, including working as a technician for audio-video conferences, in fast food restaurants, and tutoring math and programming.",
+            "Experience2": "Most of my software experience comes from academic projects and assignments.",
+            "Skills1": "Most of my programming skills are listed on the home page, and I am also showcasing them here.",
+            "Skills2": "Additionally:",
+            "Interests1": "I enjoy spending my time actively. I have been climbing regularly for about six months, and I also enjoy mountain hiking.",
+            "Interests2": "However, my longest-cultivated passion is music, particularly playing the guitar."
+        }
+    },
+    "contact": {
+        "sections": {
+            "ContactInfo": "Contact Info",
+            "ContactMe": "Contact Me"
+        },
+        "form": {
+            "Name": "Name:",
+            "Message": "Message:"
+        },
+        "placeholders": {
+            "Name": "Your Name",
+            "Email": "Your Email",
+            "Message": "Your Message"
+        },
+        "buttons": {
+            "Send": "Send"
+        },
+        "messages": {
+            "ThankYou": "Thank you for your message!"
+        }
+    },
+    "projects": {
+        "buttons": {
+            "ReadMore": "Read more"
+        }
+    }
+}

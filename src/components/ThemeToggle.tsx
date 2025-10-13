@@ -5,7 +5,6 @@ type Theme = "light" | "dark" | "system";
 const ThemeToggle = () => {
     const [theme, setTheme] = useState<Theme>("system");
 
-    // Funkcja do ustawienia klasy na <html>
     const applyTheme = (theme: Theme) => {
         if (theme === "light") {
             document.documentElement.classList.remove("dark");
@@ -53,13 +52,7 @@ const ThemeToggle = () => {
                 applyTheme(next);
                 return next;
             })}
-            className={`absolute top-4 right-4 px-4 py-2 rounded text-white
-                    ${theme === "light"
-                    ? "bg-yellow-400 hover:bg-yellow-500 text-black"
-                    : theme === "dark"
-                        ? "bg-gray-800 hover:bg-gray-900 text-white"
-                        : "bg-blue-500 hover:bg-blue-600 text-white"
-                }`}
+            className={'absolute top-3 right-2 px-2 py-2 text-white rounded-full transition-opacity duration-300 ease-in-out bg-transparent hover:opacity-50 cursor-pointer'}
         >
             {theme === "light" && "☀️"}
             {theme === "dark" && "🌙"}

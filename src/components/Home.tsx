@@ -1,20 +1,23 @@
 import profil from '../assets/profil.png';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+    const { t } = useTranslation();
+
     return (
         <section className='fade-in relative w-full h-auto sm:h-screen mx-auto px-5 sm:px-10 max-sm:pt-20'>
             <div className='max-w-5xl w-full mx-auto px-5 flex flex-col sm:flex-row items-center justify-center h-full gap-10 sm:gap-20'>
                 <div className='flex flex-col items-center sm:items-start justify-center h-full'>
                     <div>
-                        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'> Hi I'm</h1>
+                        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'> {t('home.greeting')} </h1>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-lime-500 dark:text-purple-500'> Paweł Szeliga</h1>
                         <p className='text-base sm:text-lg md:text-xl mt-3 text-center sm:text-left'>
                             Fullstack developer
                         </p>
                     </div>
                     <div>
-                        <h1 className='text-2xl sm:text-3xl font-bold mt-5'>Skills :</h1>
+                        <h1 className='text-2xl sm:text-3xl font-bold mt-5'>{t('home.skills_title')}</h1>
                         <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-3'>
                             <li className='flex items-center gap-1'><i className="devicon-react-plain colored text-2xl"></i> React</li>
                             <li className='flex items-center gap-1'><i className="devicon-typescript-plain colored text-2xl"></i> TypeScript</li>
@@ -36,7 +39,7 @@ const Home = () => {
                                 download={true}
                                 className='text-lg sm:text-lg text-lime-500 hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 align-center justify-center flex gap-1 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
                             >
-                                Download CV
+                                {t('home.download_cv')}
                                 <span className="material-symbols-outlined">
                                     download
                                 </span>

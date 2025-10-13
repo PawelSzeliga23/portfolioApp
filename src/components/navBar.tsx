@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
+import LanguageToggle from './languageToggle';
+import { useTranslation } from 'react-i18next';
 
 const NavBar: React.FC = () => {
     const location = useLocation();
     const [show, setShow] = useState(true);
     const [lastScroll, setLastScroll] = useState(0);
+    const {t} = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -51,7 +54,7 @@ const NavBar: React.FC = () => {
                             : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
-                        Home
+                        {t('nav.home')}
                     </Link>
                 </li>
                 <li>
@@ -62,7 +65,7 @@ const NavBar: React.FC = () => {
                             : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
-                        About
+                        {t('nav.about')}
                     </Link>
                 </li>
                 <li>
@@ -73,7 +76,7 @@ const NavBar: React.FC = () => {
                             : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
-                        Projects
+                        {t('nav.projects')}
                     </Link>
                 </li>
                 <li>
@@ -84,10 +87,11 @@ const NavBar: React.FC = () => {
                             : 'text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white'
                             }`}
                     >
-                        Contact
+                        {t('nav.contact')}
                     </Link>
                 </li>
             </ul>
+            <LanguageToggle />
             <ThemeToggle />
         </nav>
     );

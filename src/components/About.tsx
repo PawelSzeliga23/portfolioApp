@@ -1,14 +1,51 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 import React, { useState } from 'react';
 import PJATK from '../assets/Budenk A 6_20230710_fot.- Magdalena Pierzchała.jpg';
-import INTREST from '../assets/Intrest.jpg';
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { useEffect } from 'react';
+import { Reorder } from 'framer-motion';
+import IntrestItem from './IntrestItem';
+import Climb_Icon from '../assets/icons/man-climbing.svg?react';
+import Hiking_Icon from '../assets/icons/mountain.svg?react';
+import Music_Icon from '../assets/icons/guitar.svg?react';
+import { useTranslation } from 'react-i18next';
+import ErrorLight from '../assets/icons/404light.svg?react';
+import ErrorDark from '../assets/icons/404dark.svg?react'; 
+
+const initialIntrests = [
+    { name: "Climbing", icon: Climb_Icon },
+    { name: "Hiking", icon: Hiking_Icon },
+    { name: "Music", icon: Music_Icon },
+];
+
 
 const About: React.FC = () => {
     const [sections] = useState(['Education', 'Experience', 'Skills', 'Interests']);
     const [activeSection, setActiveSection] = useState(sections[0]);
     const [theme, setTheme] = useState(localStorage.getItem('theme'));
     const [draggingIndex, setDraggingIndex] = useState<number | null>(null);
+    const [intrests, setIntrests] = useState(initialIntrests);
+    const { t } = useTranslation();
+
+    const listVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.2,
+                ease: "easeOut",
+                duration: 0.4
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 10 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }
+    };
 
 
     useEffect(() => {
@@ -16,10 +53,8 @@ const About: React.FC = () => {
             setTheme(localStorage.getItem('theme'));
         };
 
-        // Dla zmian w tym samym oknie, np. przy zmianie motywu
         window.addEventListener('themeChange', handleStorageChange);
 
-        // Dla zmian w innych tabach
         window.addEventListener('storage', handleStorageChange);
 
         return () => {
@@ -38,7 +73,7 @@ const About: React.FC = () => {
                                 } ${index !== sections.length - 1 ? 'border-r' : ''} hover:cursor-pointer`}
                             onClick={() => setActiveSection(section)}
                         >
-                            {section}
+                            {t(`about.sections.${section}`)}
                         </button>
                     ))}
                 </div>
@@ -54,24 +89,24 @@ const About: React.FC = () => {
                         <div className='flex flex-col p-4 w-full lg:w-1/2'>
                             {activeSection === 'Education' && (
                                 <p>
-                                    I'm currently a seventh-semester student at the Polish-Japanese Academy of Information Technology, majoring in computer science.
+                                    {t('about.paragraphs.Education1')}
                                     <br /><br />
-                                    I began my studies in 2022. I've learned a lot over the past few years; the university has given me a solid foundation in software development. I have many skill areas open to me, waiting to be developed through experience. During my studies, I completed many interesting subjects and completed many cool projects. I learned how to work in a team in software design and development.
+                                    {t('about.paragraphs.Education2')}
                                 </p>
                             )}
                             {activeSection === 'Experience' && (
                                 <p>
-                                    Although I don't have experience strictly in commercial software development, over the past few years I've taken on various non-software jobs, such as working as a technician for audio-video conferences, working in fast food restaurants, and tutoring in math and programming.
+                                    {t('about.paragraphs.Experience1')}
                                     <br /><br />
-                                    Most of my software experience comes from school and working on project assignments.
+                                    {t('about.paragraphs.Experience2')}
                                 </p>
                             )}
                             {activeSection === 'Skills' && (
                                 <div>
                                     <p>
-                                        I've listed most of my programming skills on the home page and here too.
+                                        {t('about.paragraphs.Skills1')}
                                         <br /><br />
-                                        Also:
+                                        {t('about.paragraphs.Skills2')}
                                     </p>
                                     <ul className="list-disc list-inside mb-2">
                                         <li>OOP principles, design patterns, testing, Git</li>
@@ -85,7 +120,9 @@ const About: React.FC = () => {
                             )}
                             {activeSection === 'Interests' && (
                                 <p>
-                                    This is the Interests section. Here you can add details about your hobbies and interests.
+                                    {t('about.paragraphs.Interests1')}
+                                    <br /><br />
+                                    {t('about.paragraphs.Interests2')}
                                 </p>
                             )}
                         </div>
@@ -98,11 +135,10 @@ const About: React.FC = () => {
                                 />
                             )}
                             {activeSection === 'Experience' && (
-                                <img
-                                    src="path/to/experience-image.jpg"
-                                    alt="Experience"
-                                    className="w-full h-full object-cover object-[left_top]"
-                                />
+                                <div className="w-full h-full flex items-center justify-center">
+                                <ErrorDark className={`w-full h-100 ${theme === 'light' ? 'hidden' : 'block'}`} />
+                                <ErrorLight className={`w-full h-100 ${theme === 'light' ? 'block' : 'hidden'}`} />
+                                </div>
                             )}
                             {activeSection === 'Skills' && (
                                 <motion.ul
@@ -156,11 +192,25 @@ const About: React.FC = () => {
                                 </motion.ul>
                             )}
                             {activeSection === 'Interests' && (
-                                <img
-                                    src={INTREST}
-                                    alt="Interests"
-                                    className="w-full h-full object-cover"
-                                />
+                                <motion.ul
+                                    variants={listVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                    className="w-full px-8 flex flex-col items-center justify-center"
+                                >
+                                    <Reorder.Group
+                                        axis="y"
+                                        values={intrests}
+                                        onReorder={setIntrests}
+                                        className="w-full flex flex-col items-center justify-center py-4"
+                                    >
+                                        {intrests.map((item) => (
+                                            <motion.li key={item.name} variants={itemVariants} className="w-full">
+                                                <IntrestItem intrest={item} />
+                                            </motion.li>
+                                        ))}
+                                    </Reorder.Group>
+                                </motion.ul>
                             )}
                         </div>
                     </div>

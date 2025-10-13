@@ -2,19 +2,23 @@ import React from 'react';
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ProjectCardProps {
     id: number;
     title: string;
-    shortDesc: string;
+    shortDescEn: string;
+    shortDescPl: string;
     githubLink: string;
     image: string;
     technologies: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, shortDesc, githubLink, image, technologies }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, shortDescEn, shortDescPl, githubLink, image, technologies }) => {
     const x = useMotionValue(200);
     const y = useMotionValue(200);
+    const { t , i18n } = useTranslation();
+    const shortDesc = i18n.language === 'pl' ? shortDescPl : shortDescEn;   
 
 
     const [theme, setTheme] = useState(localStorage.getItem('theme'));
@@ -39,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, shortDesc, githubLink,
     const rotateX = useTransform(y, [0, 400], [2, -2]);
     const rotateY = useTransform(x, [0, 400], [-2, 2]);
 
-    function handleMouse(event) {
+    function handleMouse(event: React.MouseEvent) {
         const rect = event.currentTarget.getBoundingClientRect();
 
         x.set(event.clientX - rect.left);
@@ -89,7 +93,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, shortDesc, githubLink,
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center px-3 py-2 pr-1 text-sm font-medium text-center text-white bg-lime-500 rounded-lg hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-300 transition duration-200 ease-in-out transform hover:scale-105 justify-center gap-1 dark:bg-purple-500 dark:hover:bg-purple-600 dark:focus:ring-purple-300"
                             >
-                                Read more
+                                {t("projects.buttons.ReadMore")}
                                 <span className="material-symbols-outlined">chevron_right</span>
                             </a>
                             <div className="flex flex-wrap">

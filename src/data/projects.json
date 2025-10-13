@@ -2,7 +2,8 @@
     {
         "id": 1,
         "title": "Portfolio",
-        "shortDesc": "This is a portfolio application to showcase my projects, skills, and experience. It is designed to provide a overview of my professional background and achievements.",
+        "shortDescEn": "This is a portfolio application to showcase my projects, skills, and experience. It is designed to provide an overview of my professional background and achievements.",
+        "shortDescPl": "Aplikacja portfolio służąca do prezentacji moich projektów, umiejętności i doświadczenia. Została zaprojektowana, aby zapewnić przegląd mojego profesjonalnego doświadczenia i osiągnięć.",
         "github1": "https://github.com/PawelSzeliga23/portfolioApp",
         "github2": "",
         "images": [
@@ -17,7 +18,8 @@
     {
         "id": 2,
         "title": "Maze Game",
-        "shortDesc": "Maze is a game created in Pygame, where the player moves through the maze, trying to reach the goal. The game is based on exploration mechanics.",
+        "shortDescEn": "Maze is a game created in Pygame, where the player moves through the maze, trying to reach the goal. The game is based on exploration mechanics.",
+        "shortDescPl": "Maze to gra stworzona w Pygame, w której gracz porusza się po labiryncie, próbując dotrzeć do celu. Gra opiera się na mechanice eksploracji.",
         "github1": "https://github.com/PawelSzeliga23/pygame",
         "github2": "",
         "images": [
@@ -30,7 +32,8 @@
     {
         "id": 3,
         "title": "Fish Enthusiasts Social Platform - in progress...",
-        "shortDesc": "FishApp is a social platform for fishing enthusiasts. Connect with fellow anglers, share your fishing experiences, and get insights on the best fishing spots.",
+        "shortDescEn": "FishApp is a social platform for fishing enthusiasts. Connect with fellow anglers, share your fishing experiences, and get insights on the best fishing spots.",
+        "shortDescPl": "FishApp to platforma społecznościowa dla miłośników wędkarstwa. Połącz się z innymi wędkarzami, dziel się swoimi doświadczeniami wędkarskimi i uzyskaj informacje o najlepszych miejscach do wędkowania.",
         "github1": "https://github.com/PawelSzeliga23/fishSite",
         "github2": "",
         "images": [],
@@ -43,7 +46,8 @@
     {
         "id": 4,
         "title": "Game project - in progress...",
-        "shortDesc": "Developed with Unreal Engine 5, this project is a isometric game that combines exploration, survival and combat elements. The game is set on a mysterious planet filled with dangerous creatures and challenging environments.",
+        "shortDescEn": "Developed with Unreal Engine 5, this project is a isometric game that combines exploration, survival and combat elements. The game is set on a mysterious planet filled with dangerous creatures and challenging environments.",
+        "shortDescPl": "Stworzony za pomocą Unreal Engine 5, ten projekt to izometryczna gra łącząca elementy eksploracji, przetrwania i walki. Akcja gry toczy się na tajemniczej planecie pełnej niebezpiecznych stworzeń i wymagających środowisk.",
         "github1": "https://github.com/PawelSzeliga23/Game_project",
         "github2": "",
         "images": [],
@@ -54,7 +58,8 @@
     {
         "id": 5,
         "title": "MultiLayerNN",
-        "shortDesc": "This project implements a multilayer neural network (MLP) for classifying handwritten digits using the MNIST dataset. The model is implemented solely with the NumPy library, without using dedicated neural network libraries.",
+        "shortDescEn": "This project implements a multilayer neural network (MLP) for classifying handwritten digits using the MNIST dataset. The model is implemented solely with the NumPy library, without using dedicated neural network libraries.",
+        "shortDescPl": "Projekt implementuje wielowarstwową sieć neuronową (MLP) do klasyfikacji ręcznie pisanych cyfr przy użyciu zbioru danych MNIST. Model jest zaimplementowany wyłącznie za pomocą biblioteki NumPy, bez użycia dedykowanych bibliotek sieci neuronowych.",
         "github1": "https://github.com/PawelSzeliga23/MultiLayerNN",
         "github2": "",
         "images": [],
@@ -65,7 +70,8 @@
     {
         "id": 6,
         "title": "Polish Summits Library - backend",
-        "shortDesc": "Backend application created with ASP.NET Core framework, part of a semester project. The project aims to create a REST API for the Polish Mountain Peaks Library.",
+        "shortDescEn": "Backend application created with ASP.NET Core framework, part of a semester project. The project aims to create a REST API for the Polish Mountain Peaks Library.",
+        "shortDescPl": "Aplikacja backendowa stworzona w ramach projektu semestralnego z wykorzystaniem frameworka ASP.NET Core. Celem projektu jest stworzenie REST API dla Polskiej Biblioteki Szczytów Górskich.",
         "github1": "https://github.com/PawelSzeliga23/TIN_project_backend",
         "github2": "",
         "images": [],
@@ -78,7 +84,8 @@
     {
         "id": 7,
         "title": "Train simulator",
-        "shortDesc": "A train simulator application developed in Java. It is console-based and allows users to simulate train operations, including managing routes, schedules, and train statuses.",
+        "shortDescEn": "A train simulator application developed in Java. It is console-based and allows users to simulate train operations, including managing routes, schedules, and train statuses.",
+        "shortDescPl": "Aplikacja symulatora pociągu stworzona w Javie. Jest oparta na konsoli i pozwala użytkownikom symulować operacje pociągów, w tym zarządzanie trasami, rozkładami jazdy i statusami pociągów.",
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI_train_simulator",
         "github2": "",
         "images": [],
@@ -89,7 +96,8 @@
     {
         "id": 8,
         "title": "Pacman Game",
-        "shortDesc": "Implementation of the Pacman game in Java using Swing library. The game features classic Pacman mechanics, including maze navigation, pellet collection, and ghost avoidance.",
+        "shortDescEn": "Implementation of the Pacman game in Java using Swing library. The game features classic Pacman mechanics, including maze navigation, pellet collection, and ghost avoidance.",
+        "shortDescPl": "Implementacja gry Pacman w Javie z wykorzystaniem biblioteki Swing. Gra zawiera klasyczną mechanikę Pacmana, w tym nawigację po labiryncie, zbieranie kropek i unikanie duchów.",
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI2_pacman_game",
         "github2": "",
         "images": [
@@ -102,7 +110,8 @@
     {
         "id": 9,
         "title": "Polish Summits Library - frontend",
-        "shortDesc": "A library for managing information about Polish summits.",
+        "shortDescEn": "A library for managing information about Polish summits.",
+        "shortDescPl": "Biblioteka do zarządzania informacjami o polskich szczytach.",
         "github1": "https://github.com/PawelSzeliga23/TIN_projekt_frontend",
         "github2": "https://github.com/PawelSzeliga23/TIN_project_backend",
         "images": [

@@ -1,0 +1,62 @@
+{
+    "home": {
+        "greeting": "Cześć, jestem",
+        "skills_title": "Umiejętności:",
+        "download_cv": "Pobierz CV"
+    },
+    "nav": {
+        "home": "Strona główna",
+        "about": "O mnie",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "about": {
+        "sections": {
+            "Skills": "Umiejętności",
+            "Experience": "Doświadczenie",
+            "Education": "Edukacja",
+            "Interests": "Zainteresowania"
+        },
+        "interests": {
+            "Climbing": "Wspinaczka",
+            "Hiking": "Wędrówki",
+            "Music": "Muzyka"
+        },
+        "paragraphs": {
+            "Education1": "Obecnie jestem studentem siódmego semestru na Polsko-Japońskiej Akademii Technik Komputerowych, na kierunku informatyka.",
+            "Education2": "Rozpocząłem studia w 2022 roku i wiele się nauczyłem przez ostatnie lata. Uczelnia zapewniła mi solidne podstawy w rozwoju oprogramowania, a wiele obszarów moich umiejętności jest gotowych do dalszego rozwijania poprzez praktyczne doświadczenie. Podczas studiów ukończyłem wiele ciekawych przedmiotów i realizowałem interesujące projekty, ucząc się współpracy w zespołach zajmujących się projektowaniem i tworzeniem oprogramowania.",
+            "Experience1": "Chociaż nie posiadam bezpośredniego doświadczenia w komercyjnym tworzeniu oprogramowania, przez ostatnie lata podejmowałem różne prace niezwiązane bezpośrednio z IT, m.in. jako technik podczas konferencji audio-wideo, w restauracjach fast food oraz udzielając korepetycji z matematyki i programowania.",
+            "Experience2": "Większość mojego doświadczenia w tworzeniu oprogramowania pochodzi z projektów akademickich i zadań realizowanych w ramach studiów.",
+            "Skills1": "Większość moich umiejętności programistycznych jest wymieniona na stronie głównej, a tutaj również je prezentuję.",
+            "Skills2": "Dodatkowo:",
+            "Interests1": "Lubię spędzać czas aktywnie. Od około sześciu miesięcy regularnie wspinam się po skałach, a także lubię wędrówki górskie.",
+            "Interests2": "Moją najdłużej rozwijaną pasją jest jednak muzyka, a szczególnie gra na gitarze."
+        }
+    },
+    "contact": {
+        "sections": {
+            "ContactInfo": "Informacje kontaktowe",
+            "ContactMe": "Skontaktuj się ze mną"
+        },
+        "form": {
+            "Name": "Imię:",
+            "Message": "Wiadomość:"
+        },
+        "placeholders": {
+            "Name": "Twoje imię",
+            "Email": "Twój email",
+            "Message": "Twoja wiadomość"
+        },
+        "buttons": {
+            "Send": "Wyślij"
+        },
+        "messages": {
+            "ThankYou": "Dziękuję za Twoją wiadomość!"
+        }
+    },
+    "projects": {
+        "buttons": {
+            "ReadMore": "Czytaj więcej"
+        }
+    }
+}

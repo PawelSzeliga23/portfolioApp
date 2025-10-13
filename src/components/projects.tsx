@@ -13,7 +13,8 @@ const Projects: React.FC = () => {
                         key={index}
                         id={project.id}
                         title={project.title}
-                        shortDesc={project.shortDesc}
+                        shortDescEn={project.shortDescEn}
+                        shortDescPl={project.shortDescPl}
                         githubLink={project.github1}
                         image={project.images[0]}
                         technologies={project.technologies}
