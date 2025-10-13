@@ -7,7 +7,7 @@
         "github1": "https://github.com/PawelSzeliga23/portfolioApp",
         "github2": "",
         "images": [
-            "/src/assets/projects/portfolio1.png"
+            "/projects/portfolio1.png"
         ],
         "technologies": [
             "react",
@@ -23,7 +23,7 @@
         "github1": "https://github.com/PawelSzeliga23/pygame",
         "github2": "",
         "images": [
-            "/src/assets/projects/mazegame1.png"
+            "/projects/mazegame1.png"
         ],
         "technologies": [
             "Python"
@@ -101,7 +101,7 @@
         "github1": "https://github.com/PawelSzeliga23/ProjektGUI2_pacman_game",
         "github2": "",
         "images": [
-            "/src/assets/projects/pacman1.png"
+            "/projects/pacman1.png"
         ],
         "technologies": [
             "java"
@@ -115,8 +115,7 @@
         "github1": "https://github.com/PawelSzeliga23/TIN_projekt_frontend",
         "github2": "https://github.com/PawelSzeliga23/TIN_project_backend",
         "images": [
-            "/src/assets/projects/summitLib1.png",
-            "/src/assets/projects/summitLib2.png"
+            "/projects/summitLib1.png"
         ],
         "technologies": [
             "react",
