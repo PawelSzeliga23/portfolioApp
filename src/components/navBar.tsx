@@ -27,8 +27,8 @@ const NavBar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScroll]);
 
-    const widhth = window.innerWidth;
-    const isMobile = widhth < 640;
+    //const widhth = window.innerWidth;
+    //const isMobile = widhth < 640;
 
     return (
         <nav

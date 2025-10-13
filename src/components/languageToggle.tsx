@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 const LanguageToggle = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     return (
         <div className='absolute top-3 right-10 px-2 py-2 dark:text-white text-black rounded-full bg-transparent'>
