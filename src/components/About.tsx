@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import PJATK from '../assets/Budenk A 6_20230710_fot.- Magdalena Pierzchała.jpg';
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { Reorder } from 'framer-motion';
 import IntrestItem from './IntrestItem';
@@ -11,7 +11,7 @@ import Hiking_Icon from '../assets/icons/mountain.svg?react';
 import Music_Icon from '../assets/icons/guitar.svg?react';
 import { useTranslation } from 'react-i18next';
 import ErrorLight from '../assets/icons/404light.svg?react';
-import ErrorDark from '../assets/icons/404dark.svg?react'; 
+import ErrorDark from '../assets/icons/404dark.svg?react';
 
 const initialIntrests = [
     { name: "Climbing", icon: Climb_Icon },
@@ -109,12 +109,12 @@ const About: React.FC = () => {
                                         {t('about.paragraphs.Skills2')}
                                     </p>
                                     <ul className="list-disc list-inside mb-2">
-                                        <li>OOP principles, design patterns, testing, Git</li>
-                                        <li>Designing and maintaining relational databases</li>
-                                        <li>Algorithms and data structures, complexity analysis</li>
-                                        <li>Fundamentals of operating systems and computer networks</li>
-                                        <li>Mathematics and logic for computer scientists</li>
-                                        <li>Teamwork, project documentation, and presentation</li>
+                                        <li>{t('about.skillsList.OOP')}</li>
+                                        <li>{t('about.skillsList.Databases')}</li>
+                                        <li>{t('about.skillsList.Algorithms')}</li>
+                                        <li>{t('about.skillsList.OS_Networks')}</li>
+                                        <li>{t('about.skillsList.Math_Logic')}</li>
+                                        <li>{t('about.skillsList.Teamwork')}</li>
                                     </ul>
                                 </div>
                             )}
@@ -136,8 +136,8 @@ const About: React.FC = () => {
                             )}
                             {activeSection === 'Experience' && (
                                 <div className="w-full h-full flex items-center justify-center">
-                                <ErrorDark className={`w-full h-100 ${theme === 'light' ? 'hidden' : 'block'}`} />
-                                <ErrorLight className={`w-full h-100 ${theme === 'light' ? 'block' : 'hidden'}`} />
+                                    <ErrorDark className={`w-full h-100 ${theme === 'light' ? 'hidden' : 'block'}`} />
+                                    <ErrorLight className={`w-full h-100 ${theme === 'light' ? 'block' : 'hidden'}`} />
                                 </div>
                             )}
                             {activeSection === 'Skills' && (

@@ -31,6 +31,14 @@
             "Skills2": "Dodatkowo:",
             "Interests1": "Lubię spędzać czas aktywnie. Od około sześciu miesięcy regularnie wspinam się po skałach, a także lubię wędrówki górskie.",
             "Interests2": "Moją najdłużej rozwijaną pasją jest jednak muzyka, a szczególnie gra na gitarze."
+        },
+        "skillsList": {
+            "OOP": "Zasady OOP, wzorce projektowe, testowanie, Git",
+            "Databases": "Projektowanie, utrzymanie i administracja relacyjnych baz danych",
+            "Algorithms": "Algorytmy i struktury danych, analiza złożoności",
+            "OS_Networks": "Podstawy systemów operacyjnych i sieci komputerowych",
+            "Math_Logic": "Matematyka i logika dla informatyków",
+            "Teamwork": "Praca zespołowa, dokumentacja projektowa i prezentacje"
         }
     },
     "contact": {

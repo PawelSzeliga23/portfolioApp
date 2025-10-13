@@ -31,6 +31,14 @@
             "Skills2": "Additionally:",
             "Interests1": "I enjoy spending my time actively. I have been climbing regularly for about six months, and I also enjoy mountain hiking.",
             "Interests2": "However, my longest-cultivated passion is music, particularly playing the guitar."
+        },
+        "skillsList": {
+            "OOP": "OOP principles, design patterns, testing, Git",
+            "Databases": "Designing, maintaining and administrating relational databases",
+            "Algorithms": "Algorithms and data structures, complexity analysis",
+            "OS_Networks": "Fundamentals of operating systems and computer networks",
+            "Math_Logic": "Mathematics and logic for computer scientists",
+            "Teamwork": "Teamwork, project documentation, and presentation"
         }
     },
     "contact": {
