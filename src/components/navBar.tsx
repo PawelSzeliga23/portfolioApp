@@ -113,7 +113,7 @@ const NavBar: React.FC = () => {
                                         y: 5,
                                     },
                                 }}
-                                className="w-6 bg-black h-px block"
+                                className="w-6 bg-black h-px block dark:bg-white"
                             ></motion.span>
                             <motion.span
                                 variants={{
@@ -124,7 +124,7 @@ const NavBar: React.FC = () => {
                                         opacity: 0,
                                     },
                                 }}
-                                className="w-6 bg-black h-px block"
+                                className="w-6 bg-black h-px block dark:bg-white"
                             ></motion.span>
                             <motion.span
                                 variants={{
@@ -136,7 +136,7 @@ const NavBar: React.FC = () => {
                                         y: -5,
                                     },
                                 }}
-                                className="w-6 bg-black h-px block"
+                                className="w-6 bg-black h-px block dark:bg-white"
                             ></motion.span>
                         </motion.button>
                         <AnimatePresence>
