@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
 
 
     return (
-        <div className="container mx-auto p-4 pt-20 flex justify-center">
+        <div className="container mx-auto p-4 pt-20 flex justify-center max-sm:pt-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:max-lg:grid-cols-3 gap-4 items-stretch">
                 {projects.map((project, index) => (
                     <ProjectCard

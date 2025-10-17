@@ -29,15 +29,15 @@ const Contact: React.FC = () => {
 
         const now = new Date().toLocaleString();
         emailjs.send(
-            "service_doyoiqa",     
-            "template_2137dle",     
+            "service_doyoiqa",
+            "template_2137dle",
             {
                 user_name: form.name,
                 user_email: form.email,
                 message: form.message,
                 time: now,
             },
-            "GeQ0S74U7QjTQZaWn"       
+            "GeQ0S74U7QjTQZaWn"
         ).then(
             (result) => {
                 console.log("Wysłano ✅", result.text);
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className="pt-20">
+        <div className="pt-20 max-sm:pt-0">
             <div className="max-w-4xl mx-auto  p-8 bg-white rounded-xl shadow-lg flex flex-col md:flex-row gap-8 dark:bg-gray-800 ">
                 <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0 ">
                     <h2 className="text-3xl font-bold mb-6 text-gray-800 flex items-center h-[56px] dark:text-gray-100">{t("contact.sections.ContactInfo")}</h2>
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                 <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
                     <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 flex items-center h-[56px] dark:text-gray-100">{t("contact.sections.ContactMe")}</h2>
                     {submitted ? (
-                        <p className="text-lime-500 text-center font-semibold">{t("contact.messages.ThankYou")}</p>
+                        <p className="text-lime-500 text-center font-semibold dark:text-purple-500">{t("contact.messages.ThankYou")}</p>
                     ) : (
                         <form onSubmit={handleSubmit} className="space-y-5">
                             <div>

@@ -1,13 +1,15 @@
 import profil from '../assets/profil.png';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 const Home = () => {
     const { t } = useTranslation();
+    const [DownloadPopoutDisabled, setDownloadPopoutDisabled] = useState(true);
 
     return (
-        <section className='fade-in relative w-full h-auto sm:h-screen mx-auto px-5 sm:px-10 max-sm:pt-20'>
-            <div className='max-w-5xl w-full mx-auto px-5 flex flex-col sm:flex-row items-center justify-center h-full gap-10 sm:gap-20'>
+        <section className='fade-in relative w-full h-auto sm:h-screen mx-auto px-5 sm:px-10 '>
+            <div className={`max-w-5xl w-full mx-auto px-5 flex flex-col sm:flex-row items-center justify-center h-full gap-10 sm:gap-20 ${DownloadPopoutDisabled ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-50 blur-sm '} transition-all duration-300 ease-in-out`}>
                 <div className='flex flex-col items-center sm:items-start justify-center h-full'>
                     <div>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'> {t('home.greeting')} </h1>
@@ -34,16 +36,15 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col sm:flex-col md:flex-row lg:flex-row items-center justify-center gap-10 mt-5'>
                         <div>
-                            <a
-                                href='/public/Paweł_Szeliga_CV.pdf'
-                                download={true}
-                                className='text-lg sm:text-lg text-lime-500 hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 align-center justify-center flex gap-1 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
+                            <button
+                                onClick={() => { setDownloadPopoutDisabled(false) }}
+                                className='text-lg sm:text-lg text-lime-500 cursor-pointer hover:text-lime-600 border-2 border-lime-500 dark:text-purple-500 dark:hover:text-purple-600 dark:border-purple-500 dark:hover:border-purple-600 rounded-full px-4 py-2 transition duration-200 ease-in-out transform hover:scale-105 align-center justify-center flex gap-1 focus:outline-none focus:ring-lime-300 dark:focus:ring-purple-300 focus:ring-4'
                             >
                                 {t('home.download_cv')}
                                 <span className="material-symbols-outlined">
                                     download
                                 </span>
-                            </a>
+                            </button>
                         </div>
                         <div className='flex gap-4'>
                             <a
@@ -75,6 +76,47 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {!DownloadPopoutDisabled &&
+                <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full ">
+                        <div className="flex justify-between items-center">
+                            <h2 className="text-2xl font-bold text-lime-500 dark:text-purple-500">{t('home.download_cv')}</h2>
+                            <button
+                                onClick={() => setDownloadPopoutDisabled(true)}
+                                className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none"
+                                aria-label="Close"
+                            >
+                                <span className="material-symbols-outlined">
+                                    close
+                                </span>
+                            </button>
+                        </div>
+                        <div className="border-t border-gray-300 my-4" />
+                        <div className="flex flex-col gap-4">
+                            <a
+                                href="/cv.pdf"
+                                download
+                                className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded-md"
+                            >
+                                Paweł_Szeliga_CV_Polski.pdf
+                                <span className="material-symbols-outlined">
+                                    download
+                                </span>
+                            </a>
+                            <a
+                                href="/cv.pdf"
+                                download
+                                className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded-md"
+                            >
+                                Paweł_Szeliga_CV_English.pdf
+                                <span className="material-symbols-outlined">
+                                    download
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
         </section>
     );
 };

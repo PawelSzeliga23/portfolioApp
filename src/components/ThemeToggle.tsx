@@ -52,7 +52,7 @@ const ThemeToggle = () => {
                 applyTheme(next);
                 return next;
             })}
-            className={'absolute top-3 right-2 px-2 py-2 text-white rounded-full transition-opacity duration-300 ease-in-out bg-transparent hover:opacity-50 cursor-pointer'}
+            className={'absolute top-3 right-2 px-2 py-2 text-white rounded-full transition-opacity duration-300 ease-in-out bg-transparent hover:opacity-50 cursor-pointer z-50'}
         >
             {theme === "light" && "☀️"}
             {theme === "dark" && "🌙"}

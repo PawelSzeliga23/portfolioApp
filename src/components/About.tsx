@@ -63,7 +63,7 @@ const About: React.FC = () => {
         };
     }, []);
     return (
-        <div className='pt-20'>
+        <div className="pt-20 max-sm:pt-0">
             <div className='flex flex-col items-center justify-center bg-white z-50 md:w-180 lg:w-260 sm:w-140 mx-auto max-sm:mx-1 dark:bg-gray-800 p-5 rounded-lg shadow-lg'>
                 <div className="flex w-full justify-between mx-52 border border-gray-200 rounded-lg shadow-sm bg-white space-x-0 overflow-hidden dark:bg-gray-800 dark:border-gray-700 max-lg:mx-20 max-md:mx-10 max-sm:mx-5">
                     {sections.map((section, index) => (
