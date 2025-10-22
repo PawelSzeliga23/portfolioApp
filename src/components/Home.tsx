@@ -83,7 +83,7 @@ const Home = () => {
                             <h2 className="text-2xl font-bold text-lime-500 dark:text-purple-500">{t('home.download_cv')}</h2>
                             <button
                                 onClick={() => setDownloadPopoutDisabled(true)}
-                                className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none"
+                                className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none cursor-pointer"
                                 aria-label="Close"
                             >
                                 <span className="material-symbols-outlined">
@@ -94,21 +94,21 @@ const Home = () => {
                         <div className="border-t border-gray-300 my-4" />
                         <div className="flex flex-col gap-4">
                             <a
-                                href="/cv.pdf"
+                                href="/Paweł_Szeliga_CV_PL.pdf"
                                 download
                                 className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded-md"
                             >
-                                Paweł_Szeliga_CV_Polski.pdf
+                                Paweł_Szeliga_CV_PL.pdf
                                 <span className="material-symbols-outlined">
                                     download
                                 </span>
                             </a>
                             <a
-                                href="/cv.pdf"
+                                href="/Paweł_Szeliga_CV_ENG.pdf"
                                 download
                                 className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-700 px-2 py-1 rounded-md"
                             >
-                                Paweł_Szeliga_CV_English.pdf
+                                Paweł_Szeliga_CV_ENG.pdf
                                 <span className="material-symbols-outlined">
                                     download
                                 </span>

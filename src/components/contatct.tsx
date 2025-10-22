@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className="pt-20 max-sm:pt-0">
+        <div className="pt-20 max-sm:pt-0 max-sm:mx-4">
             <div className="max-w-4xl mx-auto  p-8 bg-white rounded-xl shadow-lg flex flex-col md:flex-row gap-8 dark:bg-gray-800 ">
                 <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0 ">
                     <h2 className="text-3xl font-bold mb-6 text-gray-800 flex items-center h-[56px] dark:text-gray-100">{t("contact.sections.ContactInfo")}</h2>
