@@ -22,7 +22,7 @@ This is a portfolio application to showcase my projects, skills, and experience.
 ## Installation
 1. Clone the repository:
   ```bash
-  git clone https://github.com/PawelSzeliga23/portfolio-app.git
+  git clone https://github.com/PawelSzeliga23/portfolioApp.git
   ```
 2. Navigate to the project directory:
   ```bash
