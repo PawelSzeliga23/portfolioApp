@@ -72,7 +72,7 @@ const Home = () => {
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <img src={profil} alt='avatar' className='w-60 sm:w-60 md:w-80 lg:w-96 rounded-full' />
+                        <img src={profil} alt='avatar' loading='lazy' decoding='async' className='w-60 sm:w-60 md:w-80 lg:w-96 rounded-full' />
                     </div>
                 </div>
             </div>

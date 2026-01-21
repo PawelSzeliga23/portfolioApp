@@ -123,5 +123,46 @@
             "html5",
             "css3"
         ]
+    },
+    {
+        "id": 10,
+        "title": "Dental Appointment System - frontend",
+        "shortDescEn": "A system for scheduling dental appointments - frontend",
+        "shortDescPl": "System do umawiania wizyt dentystycznych - frontend",
+        "github1": "https://github.com/IgorKotecki/SystemZapisowDoKlinikiStomatologicznejFrontend",
+        "github2": "",
+        "images": [
+        ],
+        "technologies": [
+            "react",
+            "TypeScript"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Dental Appointment System - backend",
+        "shortDescEn": "A system for scheduling dental appointments - backend",
+        "shortDescPl": "System do umawiania wizyt dentystycznych - backend",
+        "github1": "https://github.com/IgorKotecki/SystemZapis-wDoKlinikiStomatologicznejBackend",
+        "github2": "",
+        "images": [
+        ],
+        "technologies": [
+            "csharp",
+            "dotnetcore",
+            "microsoftsqlserver"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Dog Breed Detector",
+        "shortDescEn": "Dog Breed Detector is a machine learning application that identifies dog breeds from images. It utilizes a convolutional neural network (CNN) trained on a dataset of dog images to accurately classify various breeds.",
+        "shortDescPl": "Dog Breed Detector to aplikacja wykorzystująca uczenie maszynowe do identyfikacji ras psów na podstawie obrazów. Wykorzystuje splotową sieć neuronową (CNN) wytrenowaną na zbiorze danych obrazów psów, aby dokładnie klasyfikować różne rasy.",
+        "github1": "https://github.com/PawelSzeliga23/SUML_projekt_koncowy",
+        "github2": "",
+        "images": [],
+        "technologies": [
+            "Python"
+        ]
     }
 ]
